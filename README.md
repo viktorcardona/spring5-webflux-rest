@@ -4,3 +4,9 @@
 
 The source code in this repository comes from the course [Spring Framework 5: Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/?couponCode=GITWEBFLUXREST).
 
+
+Mongo
+
+    Run tre mongodb docker image
+    docker run -p 27017:27017 -d mongo
+    
