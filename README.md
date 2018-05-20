@@ -16,6 +16,13 @@ Rest Services Calls:
         curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories'
     List One Category:
         curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories/{id}'
+    Create One Category:
+        curl -v -X POST \
+          http://localhost:8080/api/v1/categories/ \
+          -H 'Content-Type: application/json' \
+          -d '{
+        	"description": "Reactive Java"
+        }'
     
     List All Vendors:
         curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/vendors'
