@@ -13,7 +13,13 @@ Mongo
 Rest Services Calls:
 
     List All Categories:
-    curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories'
-    List One Category
-    curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories/{id}'
+        curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories'
+    List One Category:
+        curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories/{id}'
+    
+    List All Vendors:
+        curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/vendors'
+    List One Vendor:
+        curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/vendors/{id}'
+        
     
