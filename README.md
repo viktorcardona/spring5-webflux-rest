@@ -9,4 +9,11 @@ Mongo
 
     Run tre mongodb docker image
     docker run -p 27017:27017 -d mongo
+
+Rest Services Calls:
+
+    List All Categories:
+    curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories'
+    List One Category
+    curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/categories/{id}'
     

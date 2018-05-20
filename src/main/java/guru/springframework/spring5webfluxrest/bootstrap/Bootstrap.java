@@ -64,9 +64,9 @@ public class Bootstrap implements CommandLineRunner {
 
             System.out.println("Loaded Vendors: " + vendorRepository.count().block());
 
+        } else {
+            System.out.println("#### DATA DETECTED ON MONGODB #####");
         }
-
-
 
     }
 }
