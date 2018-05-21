@@ -35,13 +35,22 @@ Rest Services Calls:
         curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/vendors'
     List One Vendor:
         curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/vendors/{id}'
-     Create Vendor:
+    Create Vendor:
         curl -v -X POST \
           http://localhost:8080/api/v1/vendors \
           -H 'Content-Type: application/json' \
           -d '{
             "firstName": "Michael",
             "lastName": "Jackson"
+        }'
+    
+    Update Vendor:
+        curl -v -X PUT \
+          http://localhost:8080/api/v1/vendors/5b02bcfcc30f180a1d55a37f \
+          -H 'Content-Type: application/json' \
+          -d '{
+            "firstName": "Michael",
+            "lastName": "Jackson 5"
         }'
      
         
