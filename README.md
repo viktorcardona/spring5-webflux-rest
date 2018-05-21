@@ -23,7 +23,14 @@ Rest Services Calls:
           -d '{
         	"description": "Reactive Java"
         }'
-    
+    Update One Category: (However if not exist then the category is created)
+        curl -v -X PUT \
+          http://localhost:8080/api/v1/categories/Id-X \
+          -H 'Content-Type: application/json' \
+          -d '{
+            "description": "Fruits Id-X"
+        }'
+        
     List All Vendors:
         curl -X GET --header 'Accept: application/json' 'http://localhost:8080/api/v1/vendors'
     List One Vendor:
